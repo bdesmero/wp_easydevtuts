@@ -4,7 +4,7 @@
 	<div id="main-content" class="container">
 
 		<div class="row">
-			<div class="span12">
+			<div class="col-md-12">
 				<div class="hero-unit well">
 			        <h1>Easy WordPress Development</h1>
 			        <p>This template was developed for a tutorial series about WordPress development. You can find the series on <a href="http://www.youtube.com/easydevtuts" target="_blank">YouTube</a></p>
@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="row">
-			<div class="span4">
+			<div class="col-md-4">
 				<ul class="nav nav-pills">
 				  <li class="active"><a href="#tab-one" data-toggle="tab">Tutorials</a></li>
 				  <li ><a href="#tab-two" data-toggle="tab">Blog</a></li>
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 
-			<div class="span8">
+			<div class="col-md-8">
 				<div id="slider" class="carousel slide hidden-phone">
 					<div class="carousel-inner">
 						<div class="item active">
@@ -89,9 +89,9 @@
 		</div>
 
 		<div class="row">
-			<div class="span12">
+			<div class="col-md-12">
 				<ul class="thumbnails">
-					<li class="span4">
+					<li class="col-md-4">
 						<div class="thumbnail">
 							<img src="http://placehold.it/300x200">
 							<div class="caption">
@@ -101,7 +101,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="span4">
+					<li class="col-md-4">
 						<div class="thumbnail">
 							<img src="http://placehold.it/300x200">
 								<div class="caption">
@@ -111,7 +111,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="span4">
+					<li class="col-md-4">
 						<div class="thumbnail">
 							<img src="http://placehold.it/300x200">
 							<div class="caption">

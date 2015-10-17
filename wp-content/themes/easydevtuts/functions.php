@@ -25,4 +25,18 @@ register_nav_menus(array(
 	'main-nav' => 'Main navigation'
 ));
 
+/**
+* Register sidebar
+*/
+
+register_sidebar(array(
+  'name'          => 'main-sidebar',
+  'id'            => 'sidebar-1',
+  'description'   => 'This is the main sidebar',
+  'before_widget' => '<div class="span4">',
+  'after_widget'  => '</div>',
+  'before_title'  => '<h4>',
+  'after_title'   => '</h4>'
+));
+
 ?>

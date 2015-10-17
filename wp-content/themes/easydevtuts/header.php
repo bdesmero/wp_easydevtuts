@@ -18,7 +18,7 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="span12">
+					<div class="col-md-12">
 						<div class="page-header">
 						  <h1><a href="#">easydevtuts</a> <small>web development tutorials</small></h1>
 						</div>
