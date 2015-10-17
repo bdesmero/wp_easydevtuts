@@ -39,4 +39,10 @@ register_sidebar(array(
   'after_title'   => '</h4>'
 ));
 
+/**
+* Add thumbnail feature
+*/
+
+add_theme_support('post-thumbnails');
+
 ?>

@@ -91,36 +91,27 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="thumbnails">
-					<li class="col-md-4">
-						<div class="thumbnail">
-							<img src="http://placehold.it/300x200">
-							<div class="caption">
-								<h3><a href="#">Post Title</a></h3>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p><a href="#" class="btn btn-mini">read more</a></p>
-							</div>
-						</div>
-					</li>
-					<li class="col-md-4">
-						<div class="thumbnail">
-							<img src="http://placehold.it/300x200">
+
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<!-- post -->
+
+						<li class="col-md-4">
+							<div class="thumbnail">
+								<?php the_post_thumbnail(); ?>
 								<div class="caption">
-								<h3><a href="#">Post Title</a></h3>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p><a href="#" class="btn btn-mini">read more</a></p>
+									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+									<p><?php the_excerpt(); ?></p>
+									<a href="<?php the_permalink(); ?>" class="btn btn-mini">read more</a>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="col-md-4">
-						<div class="thumbnail">
-							<img src="http://placehold.it/300x200">
-							<div class="caption">
-								<h3><a href="#">Post Title</a></h3>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p><a href="#" class="btn btn-mini">read more</a></p>
-							</div>
-						</div>
-					</li>
+						</li>
+
+					<?php endwhile; ?>
+						<!-- post navigation -->
+					<?php else: ?>
+						<!-- no posts found -->
+					<?php endif; ?>
+
 				</ul>
 			</div>
 		</div>
