@@ -5,14 +5,24 @@
     <div class="col-md-8">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <div class="page-header">
-          <h2><?php the_title(); ?> <small><em>by: <?php the_author(); ?></em></small></h2>
-          <h4><?php the_date(); ?></h4>
+        <div class="row">
+          <div class="page-header col-md-8">
+            <h2><?php the_title(); ?> <small><em>by: <?php the_author(); ?></em></small></h2>
+            <h4><?php the_date(); ?></h4>
+          </div>
         </div>
 
-        <?php the_content(); ?>
+        <div class="row">
+          <div class="col-md-8">
+            <?php the_content(); ?>
+          </div>
+        </div>
 
-        <?php comments_template(); ?>
+        <div class="row">
+          <div class="col-md-8">
+            <?php comments_template(); ?>
+          </div>
+        </div>
 
       <?php endwhile; ?>
         <!-- post navigation -->
